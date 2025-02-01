@@ -260,13 +260,13 @@
         </section>
 
         <!-- Arrival and Offers section -->
-        <section class="container mx-auto">
-            <h2 class="text-2xl lg:text-4xl text-nature-primary mb-8 lg:mb-12">Services</h2>
+        <section class="md:container md:mx-auto mx-4 mb-96 pb-12 lg:pb-0">
+            <h2 class="text-2xl lg:text-4xl text-nature-primary mb-8 lg:mb-12">Arrival & Offers</h2>
 
             <!-- cards container -->
             <div class="flex flex-col lg:flex-row gap-6">
                 <!-- card 1 -->
-                <div class="flex bg-[#115414] rounded-xl px-4 lg:px-10">
+                <div class="flex flex-1 justify-between bg-[#115414] rounded-xl px-4 lg:px-10">
                     <div class="space-y-3 lg:space-y-7 py-6 lg:py-12 ">
                         <img src="c2-assets/dawat-logo.png" alt="">
                         <button
@@ -280,11 +280,11 @@
                 </div>
 
                 <!-- card 2 -->
-                <div class="flex bg-[#102861] rounded-xl px-4 lg:px-10">
+                <div class="flex bg-[#102861] rounded-xl px-4 lg:px-10 gap-12">
                     <div class="space-y-3 lg:space-y-7 py-6 lg:py-12 ">
                         <img src="c2-assets/india-gate-logo.png" alt="">
                         <button
-                            class="btn bg-[#63B76D] border-none text-white text-sm lg:text-2xl font-normal px-4 lg:px-10">World’s
+                            class="btn bg-[#2A4D97] border-none text-white text-sm lg:text-2xl font-normal px-4 lg:px-10">World’s
                             No.1 Rice</button>
                         <h4 class="text-white text-2xl lg:text-4xl">UP to <span class="font-bold">20% OFF</span></h4>
                     </div>
@@ -296,14 +296,31 @@
         </section>
     </main>
 
-    <footer class="bg-nature-primary text-white pb-12 pt-72 lg:pb-36">
-        <div class="container mx-auto grid grid-cols-1 lg:grid-cols-3 gap-9 lg:gap-40 justify-between px-4">
+    <footer class="relative bg-nature-primary pb-12 pt-72 lg:pb-36">
+        <div class="container mx-auto">
+            <div
+                class="md:container md:mx-auto flex flex-col lg:flex-row bg-nature-secondary text-center lg:text-left m-4 rounded-xl px-7 py-8 gap-6  absolute -top-96 lg:-top-60 lg:justify-around">
+                <div>
+                    <img src="c2-assets/vegetable-busket.png" alt="">
+                </div>
+                <div class="flex flex-col gap-5 lg:justify-center">
+                    <h2 class="text-2xl lg:text-4xl text-nature-primary  font-bold lg:font-semibold lg:text-nature-text">Get Grocery News!</h2>
+                    <p>Exclusive training tips, ticks, product deals and more.</p>
+                    <input class="rounded-lg p-4" type="email" name="" id="" placeholder="Enter email....">
+                    <div>
+                        <button class="btn bg-nature-primary text-white font-normal px-6 py-2">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mx-auto grid grid-cols-1 lg:grid-cols-3 gap-9 lg:gap-40 justify-between px-4 text-white">
             <div class="space-y-3">
                 <img src="c2-assets/logo-footer.png" alt="">
                 <p class="opacity-70">Discover a world of treats, toys, and essentials handpicked for your furry friends</p>
             </div>
             <div class="lg:place-self-center">
-                <ul class="space-y-5">
+                <ul class="space-y-5 font-normal">
                     <li>Product</li>
                     <li>Services</li>
                     <li>Contact us</li>
