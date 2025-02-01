@@ -24,6 +24,21 @@
                         'nature-primary': '#179800',
                         'nature-secondary': '#EFEBE3',
                         'nature-text': '#111111',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': {
+                                transform: 'translateY(0px) rotate(0deg)',
+                                transformOrigin: 'center',
+                            },
+                            '50%': {
+                                transform: 'translateY(-10px) rotate(2deg)',
+                                transformOrigin: 'center',
+                            }
+                        }
+                    },
+                    animation: {
+                        float: "float 3s ease-in-out infinite",
                     }
                 }
             }
@@ -76,7 +91,7 @@
                     day!</p>
             </div>
             <div class="flex justify-center">
-                <img class="bg-center bg-no-repeat bg-cover" src="c2-assets/hero-vegetables.png" alt="">
+                <img class="bg-center bg-no-repeat bg-cover animate-float" src="c2-assets/hero-vegetables.png" alt="">
             </div>
         </section>
     </header>
